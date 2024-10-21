@@ -10,7 +10,7 @@ function App() {
 
     const fetchNews = async () => {
         try {
-            const response = await axios.get('/api/v1/news');
+            const response = await axios.get('https://newscope2-q4e6.vercel.app/api/v1/news');
             setNews(response.data);
             console.log(response.data);
         } catch (err) {
